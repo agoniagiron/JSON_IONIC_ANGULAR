@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>places</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let place of users" [routerLink]="['/detalle', place]">
+      <ion-avatar>
+        <ion-img [src]="place.avatar"></ion-img>
+      </ion-avatar>
+      {{place.firstname}}
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>
